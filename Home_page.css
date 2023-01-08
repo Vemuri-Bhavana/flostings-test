@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
+body{
+   background-color: #F0F1FF;
+}
+* {box-sizing: border-box;}
+
+.mySlides {display: none;}
+img {
+  vertical-align: middle;
+  width: 330px;
+}
+
+
+.slideshow-container {
+  text-align:center;
+  max-width: 1000px;
+  position: relative;
+  margin-left: 10%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #F0F1FF;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+#a1{
+    color: rgba(43, 43, 87,90%);
+}
+#h{
+    font-size: 50px;
+    font-family: 'Cormorant Garamond',sans-serif;
+    font-weight: bolder;
+}
+#title{
+    margin: 50px 0px 0px 50px;
+}
+#subtitle{
+    font-size: 20px;
+    margin-left: 20px;
+}
+#buttons{
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+.btn {
+    flex: 1 1 auto;
+    font-size: 20px;
+    padding: 10px 10px;
+    border-radius: 15px;
+    color:white;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #eee;
+    border-color: transparent;
+    margin-right: 45px;
+   } 
+.btn:hover {
+    background-position: right center; 
+  }
+#btn1{
+    background-image: linear-gradient(to right, #DAD299 0%, #B0DAB9  51%, #DAD299  100%);
+}
+#btn2{
+    background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+}
+a{
+    text-decoration: none;
+}
+a:active{
+    color: black;
+}
+@media (max-width: 480px) {
+  #a1{ text-align:center;
+   }
+  #h{
+    font-size: 35px;
+  }
+   #title{
+    margin: 50px 0px 0px 0px;
+}
+  #subtitle{
+    font-size: 13px;
+     margin:0;
+  }
+  .slideshow-container
+   {margin-top: 12%;
+     margin-left: 0%; }
+  #buttons{margin-top: 20%;}
+  .mySlides img{
+    width: 250px;
+  }
+  .btn {
+    font-size: 15px;
+    margin:0px 50px 20px 50px;
+  }
+}
